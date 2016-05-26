@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/home/users/fengxiaoke/.vim/bundle'
-let g:netrw_dirhist_2='/home/users/fengxiaoke/.vim/bundle/a.vim'
-let g:netrw_dirhist_3='/home/users/fengxiaoke/.vim/bundle'
