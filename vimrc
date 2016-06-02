@@ -3,21 +3,37 @@ execute pathogen#infect()
 
 let mapleader=";"
 
+filetype on
+filetype plugin on
+
 nmap LB 0
 nmap LE $
 
-set nobackup
-set laststatus=2
-set number
-set hlsearch
+set ignorecase " vim下搜索时忽略大小写，包括命令
+set nobackup " vim不产生以~结尾的备份文件
+set laststatus=2 " ...
+set number " 显示行号
+set hlsearch " 高亮搜索
+set incsearch " 实时搜索
+set expandtab " 用space代替tab的输入
+set tabstop=4 " tab为4个空格
+set shiftwidth=4 " 换行时行间交错使用4个空格
+set softtabstop=4 " 设置制表符宽度为4
+set autoindent " 自动对齐
+set smartindent " 智能对齐
+set showmatch " 括号匹配模式
+set ruler " 显示状态行
+set foldmethod=indent
+set nofoldenable
 
 syntax enable
 syntax on
 
-set expandtab
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+
+" tagbar
+nmap <F4> :TagbarToggle<CR>
+let g:tagbar_width = 30
+let g:tagbar_left = 1
 
 " za: open or close
 " zM: close all
