@@ -17,6 +17,13 @@ fi
 echo ${FILE_SUFFIXS} | grep "|" > /dev/null 2>&1
 if test "$?" = "0"; then
     FILE_SUFFIXS=`echo ${FILE_SUFFIXS} | awk -F'|' '{for(i = 1; i <= NF; i++) { if(i != NF){printf("%s\\\|", $i);} else{printf("%s", $i);} } }'`
+    FILE_SUFFIXS=`echo "${FILE_SUFFIXS}\\\|php"`
+fi
+
+# track for FOLDERS
+echo ${FOLDERS} | grep "|" > /dev/null 2>&1
+if test "$?" = "0"; then
+    FOLDERS=`echo ${FOLDERS} | awk -F'|' '{for(i = 1; i <= NF; i++) { if(i != NF){printf("%s\\\|", $i);} else{printf("%s", $i);} } }'`
 fi
 # get filelist
 echo "  |- generate ${TMP}"
