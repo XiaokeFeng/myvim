@@ -3,6 +3,7 @@
 pull form [exvim](http://exvim.github.io/)
 
 Change log:
+
 1. fix bug for vimfile/tools/shell/bash/update-filelist.sh
     * find -regex, should use: \(, \), \|, and never ""
 1. fix bug for vimfile/tools/shell/bash/update-idutils.sh
