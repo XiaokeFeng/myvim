@@ -119,14 +119,21 @@ else
     let g:solarized_termcolors = 256
 endif
 colorscheme solarized
-" colorscheme exlightgray
+" colorscheme lucius
+" colorscheme molokai
+" colorscheme peaksea
+" colorscheme pyte
+" colorscheme two2tango
+" colorscheme wombat
+" colorscheme zenburn
+
 
 "/////////////////////////////////////////////////////////////////////////////
 " General
 "/////////////////////////////////////////////////////////////////////////////
 
 "set path=.,/usr/include/*,, " where gf, ^Wf, :find will search
-set backup " make backup file and leave it around
+set nobackup " make backup file and leave it around
 
 " setup back and swap directory
 let data_dir = $HOME.'/.data/'
@@ -306,8 +313,11 @@ set nf=
 " Desc: Fold text
 " ------------------------------------------------------------------
 
-set foldmethod=marker foldmarker={,} foldlevel=9999
+" set foldmethod=marker foldmarker={,} foldlevel=9999
 set diffopt=filler,context:9999
+" set foldmethod=indent
+set foldmethod=syntax
+set nofoldenable
 
 " ------------------------------------------------------------------
 " Desc: Search

@@ -66,6 +66,9 @@
 # csharp
 *.cs			text
 
+# java source
+*.java          text
+
 # objective-c/matlab/octave
 *.m             text
 
