@@ -315,8 +315,8 @@ set nf=
 
 " set foldmethod=marker foldmarker={,} foldlevel=9999
 set diffopt=filler,context:9999
-" set foldmethod=indent
-set foldmethod=syntax
+set foldmethod=indent
+" set foldmethod=syntax
 set nofoldenable
 
 " ------------------------------------------------------------------
